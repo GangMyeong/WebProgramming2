@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<head>
+    <title> &lt;canvas&gt; 사용예 </title>
+    <style>
+        .c {
+        background-color:lightgrey;
+        margin: 10px 0px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> &lt;canvas&gt; 사용예 (과제 #03-02) </h1>
+    </header>
+    <section>
+        <canvas id="myCanvas" width="200" height="100" style="solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+            
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+            ctx.moveTo(0,100);
+            ctx.lineTo(200,0);
+            ctx.stroke();
+            </script>
+    </section>
+    <footer class="c">
+        웹프로그래밍2 과목. 아무개의 예제공간입니다.<br>&nbsp;<br>&nbsp;
+    </footer>
+</body>
+    
