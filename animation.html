@@ -1,43 +1,45 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
 <head>
 	<style>
 	div{
-		width: 300px;
+		width: 350px;
 		height: 50px;
 		background: black;
-		}
-	#b1{
-	width: 20px;
-	height: 50px;
-	background: linear-gradient(to left, yellow, black);
-	position: relative; top: -50px; left: 50px;
-	animation: boxmove1 5s linear infinite alternate;
 	}
-	#b2{
-		width: 20px;
+	#leftgradation{
+        width: 25px;
+        height: 50px;
+        background: linear-gradient(to left, yellow, black);
+        position: relative; top: -50px; left: 50px;
+        animation: leftgradation_move 5s linear infinite alternate;
+	}
+	#rightgradation{
+		width: 25px;
 		height: 50px;
 		background: linear-gradient(to right, yellow, black);
 		position: relative; top: -100px; left: 50px;
-		animation: boxmove2 5s linear infinite alternate;
+		animation: rightgradation_move 5s linear infinite alternate;
 		}
-	#b3{
+	#textbox{
 		width: 300px;
 		height: 10px;
 		background: white;
 		position: relative; top: -100px; left: 0px;
-		}
-	@keyframes boxmove1 {
-		from { left: 0px; }
-		to { left: 260px; }
 	}
-	@keyframes boxmove2 {
-		from { left: 20px; }
-		to { left: 280px; }
-		}
+	@keyframes leftgradation_move {
+		from { left: 0px; }
+		to { left: 300px; }
+	}
+	@keyframes rightgradation_move {
+		from { left: 25px; }
+		to { left: 325px; }
+	}
 	</style>
 </head>
 <body>
 	<div></div>
-	<div id="b1"></div>
-	<div id="b2"></div>
-	<div id="b3">과제 #07-01, 권상민(201714106)</div>
+	<div id="leftgradation"></div>
+	<div id="rightgradation"></div>
+	<div id="textbox">과제 #07-01, 권상민(201714106)</div>
 </body>
